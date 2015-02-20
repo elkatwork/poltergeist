@@ -1,6 +1,7 @@
 module Capybara::Poltergeist::NetworkTraffic
   class Request
     attr_reader :response_parts
+    attr_reader :data
 
     def initialize(data, response_parts = [])
       @data           = data
