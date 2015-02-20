@@ -89,10 +89,10 @@ class Poltergeist.WebPage
         @redirectURL = null
         @requestId   = request.id
 
-      @_networkTraffic[request.id] = {
-        request:       request,
-        responseParts: []
-      }
+    @_networkTraffic[request.id] = {
+      request:       request,
+      responseParts: []
+    }
 
   onResourceReceivedNative: (response) ->
     @_networkTraffic[response.id]?.responseParts.push(response)
